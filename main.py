@@ -2,6 +2,7 @@ import torch
 import struct as st
 from PIL import Image
 
+
 def read_idx(archivo):
     data = open(archivo, 'rb')
 
@@ -28,7 +29,7 @@ def read_idx(archivo):
         tensor = torch.tensor(list(binary_vector), dtype=torch.uint8)
 
         tensor = tensor.view(images, rows, columns)
-
+        print(tensor)
         return tensor
 
     elif magic[3] == 1:
@@ -48,6 +49,14 @@ def read_idx(archivo):
 
 
 def save_images(images):
+    una = Image.new('L', (28, 28))
+    for i in range(0, 5):
+        una.putdata(list(images[i].view(-1)))  # el -1 convierte a una dimension
+        una.show()
+        una.save(str(i) + '.jpg')
+        
+
+def filter_data(images, labels, singleLabel):
     pass
 
 
@@ -55,8 +64,4 @@ if __name__ == '__main__':
     images = read_idx('train-images.idx3-ubyte')
     labels = read_idx('train-labels.idx1-ubyte')
     print("-----------------------------------------------------------------------------------")
-    una = Image.new('L', (28, 28))
-    for i in range(0, 5):
-        una.putdata(list(images[i].view(-1)))  # el -1 convierte a una dimension
-        una.show()
-        una.save(str(i)+'.jpg')
+    save_images(images)
