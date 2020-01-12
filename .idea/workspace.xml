@@ -2,21 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b527b776-243e-48cc-8b27-cf3ebf488ccd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eight.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/five.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/four.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nine.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/one.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seven.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/six.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/three.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/two.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zero.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Lab1-CI2600.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Lab1-CI2600.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eight.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/five.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/four.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nine.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/one.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/seven.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/six.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/three.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/two.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zero.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,44 +96,65 @@
       <workItem from="1578534828379" duration="2126000" />
       <workItem from="1578537979467" duration="2342000" />
       <workItem from="1578541103233" duration="1718000" />
-      <workItem from="1578712184379" duration="5567000" />
+      <workItem from="1578712184379" duration="14608000" />
+      <workItem from="1578786602654" duration="6918000" />
     </task>
+    <task id="LOCAL-00001" summary="falta mean">
+      <created>1578720958599</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1578720958599</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="falta mean" />
+    <option name="LAST_COMMIT_MESSAGE" value="falta mean" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="141" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578534960929">
+    <state x="141" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578779740654">
       <screen x="0" y="24" width="1366" height="744" />
     </state>
-    <state x="141" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.24.1366.744@0.24.1366.744" timestamp="1578534960929" />
+    <state x="141" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.24.1366.744@0.24.1366.744" timestamp="1578779740654" />
+    <state x="248" y="24" width="860" height="742" key="CommitChangelistDialog2" timestamp="1578720957748">
+      <screen x="0" y="24" width="1366" height="744" />
+    </state>
+    <state x="248" y="24" width="860" height="742" key="CommitChangelistDialog2/0.24.1366.744@0.24.1366.744" timestamp="1578720957748" />
     <state x="466" y="154" width="424" height="482" key="FileChooserDialogImpl" timestamp="1578534953179">
       <screen x="0" y="24" width="1366" height="744" />
     </state>
     <state x="466" y="154" width="424" height="482" key="FileChooserDialogImpl/0.24.1366.744@0.24.1366.744" timestamp="1578534953179" />
-    <state width="1320" height="162" key="GridCell.Tab.0.bottom" timestamp="1578720408566">
+    <state width="1320" height="153" key="GridCell.Tab.0.bottom" timestamp="1578799693403">
       <screen x="0" y="24" width="1366" height="744" />
     </state>
-    <state width="1320" height="162" key="GridCell.Tab.0.bottom/0.24.1366.744@0.24.1366.744" timestamp="1578720408566" />
-    <state width="1320" height="162" key="GridCell.Tab.0.center" timestamp="1578720408564">
+    <state width="1320" height="153" key="GridCell.Tab.0.bottom/0.24.1366.744@0.24.1366.744" timestamp="1578799693403" />
+    <state width="1320" height="153" key="GridCell.Tab.0.center" timestamp="1578799693402">
       <screen x="0" y="24" width="1366" height="744" />
     </state>
-    <state width="1320" height="162" key="GridCell.Tab.0.center/0.24.1366.744@0.24.1366.744" timestamp="1578720408564" />
-    <state width="1320" height="162" key="GridCell.Tab.0.left" timestamp="1578720408563">
+    <state width="1320" height="153" key="GridCell.Tab.0.center/0.24.1366.744@0.24.1366.744" timestamp="1578799693402" />
+    <state width="1320" height="153" key="GridCell.Tab.0.left" timestamp="1578799693401">
       <screen x="0" y="24" width="1366" height="744" />
     </state>
-    <state width="1320" height="162" key="GridCell.Tab.0.left/0.24.1366.744@0.24.1366.744" timestamp="1578720408563" />
-    <state width="1320" height="162" key="GridCell.Tab.0.right" timestamp="1578720408565">
+    <state width="1320" height="153" key="GridCell.Tab.0.left/0.24.1366.744@0.24.1366.744" timestamp="1578799693401" />
+    <state width="1320" height="153" key="GridCell.Tab.0.right" timestamp="1578799693403">
       <screen x="0" y="24" width="1366" height="744" />
     </state>
-    <state width="1320" height="162" key="GridCell.Tab.0.right/0.24.1366.744@0.24.1366.744" timestamp="1578720408565" />
+    <state width="1320" height="153" key="GridCell.Tab.0.right/0.24.1366.744@0.24.1366.744" timestamp="1578799693403" />
     <state x="172" y="31" key="SettingsEditor" timestamp="1578534852515">
       <screen x="0" y="24" width="1366" height="744" />
     </state>
     <state x="172" y="31" key="SettingsEditor/0.24.1366.744@0.24.1366.744" timestamp="1578534852515" />
+    <state x="278" y="132" width="800" height="526" key="Vcs.Push.Dialog.v2" timestamp="1578720961934">
+      <screen x="0" y="24" width="1366" height="744" />
+    </state>
+    <state x="278" y="132" width="800" height="526" key="Vcs.Push.Dialog.v2/0.24.1366.744@0.24.1366.744" timestamp="1578720961934" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Lab1_CI2600$main.coverage" NAME="main Coverage Results" MODIFIED="1578720408540" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Lab1_CI2600$main.coverage" NAME="main Coverage Results" MODIFIED="1578799693384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

@@ -1,6 +1,8 @@
 import torch
 import struct as st
 from PIL import Image
+import os
+import random
 
 
 def read_idx(archivo):
@@ -56,58 +58,54 @@ def save_images(images):
         una.save(str(i) + '.jpg')
         
 
-def filter_data(images, labels, singleLabel, index_to_save, name):
+def filter_data(images, labels, singleLabel):
     x = (labels == singleLabel)
     y = x.nonzero()
     nums = images[y]
     image = Image.new('L', (28, 28))
-    image.putdata(list(nums[index_to_save].view(-1)))
+    image.putdata(list(nums[random.randint(0, nums.size()[0])].view(-1)))
     #image.show()
-    image.save(name + '.jpg')
+    image.save(os.path.join('./filter_data/'+str(singleLabel) + '.jpg'))
     return nums
 
 
 def merge_images(images, operation, number):
     labels = read_idx('train-labels.idx1-ubyte')
+    x = (labels == number)
+    y = x.nonzero()
     if operation == "max":
-        max = torch.max(images).item()
-        x = (labels == number)
-        y = x.nonzero()
         nums = images[y]
+        max = torch.max(nums)
         image = Image.new('L', (28, 28))
-        image.putdata(list(nums[max].view(-1)))
-        image.show()
+        image.putdata(list(nums[max.type(torch.int32)].view(-1)))
+        #ximage.show()
+        image.save(os.path.join('./max/'+str(number) + '.jpg'))
     elif operation == "median":
-        media = torch.median(images).item()
-        x = (labels == number)
-        y = x.nonzero()
         nums = images[y]
+        media = torch.median(nums)
         image = Image.new('L', (28, 28))
-        image.putdata(list(nums[media].view(-1)))
-        image.show()
+        image.putdata(list(nums[media.type(torch.int32)].view(-1)))
+        #image.show()
+        image.save(os.path.join('./median/'+str(number) + '.jpg'))
     elif operation == "mean":
-        x = (labels == number)
-        y = x.nonzero()
         nums = images[y]
-        mean = torch.mean(nums, 1)
+        mean = torch.mean(nums.type(torch.float32))
         image = Image.new('L', (28, 28))
-        image.putdata(list(nums[mean].view(-1)))
-        image.show()
+        image.putdata(list(nums[mean.type(torch.int32)].view(-1)))
+        #image.show()
+        image.save(os.path.join('./mean/'+str(number) + '.jpg'))
+    else:
+        print("Error! Operation not found")
 
 
 if __name__ == '__main__':
     images = read_idx('train-images.idx3-ubyte')
-    '''labels = read_idx('train-labels.idx1-ubyte')
-    print("-----------------------------------------------------------------------------------")
-    #save_images(images)
-    filter_data(images, labels, 0, 19, "zero")
-    filter_data(images, labels, 1, 87, "one")
-    filter_data(images, labels, 2, 32, "two")
-    filter_data(images, labels, 3, 55, "three")
-    filter_data(images, labels, 4, 23, "four")
-    filter_data(images, labels, 5, 1, "five")
-    filter_data(images, labels, 6, 45, "six")
-    filter_data(images, labels, 7, 12, "seven")
-    filter_data(images, labels, 8, 56, "eight")
-    filter_data(images, labels, 9, 43, "nine")'''
-    merge_images(images, "mean", 4)
+    labels = read_idx('train-labels.idx1-ubyte')
+    '''for i in range(0, 10):
+        filter_data(images, labels, i)'''
+    '''for i in range(0, 10):
+        merge_images(images, "max", i)
+        merge_images(images, "median", i)
+        merge_images(images, "mean", i)'''
+    #merge_images(images, "median", 1)
+    filter_data(images, labels, 7)
